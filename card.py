@@ -39,13 +39,7 @@ class Card:
     def get_value(self):
         return self.value
     def __str__(self):
-        result = "----------\n"
-        result += "|        |\n"
-        result += "|        |\n"
-        result += "|        |\n"
-        result += "|        |\n"
-        result += "|        |\n"
-        result = "----------\n"
+        result = f"{self.rank} of {self.suit}"
         return result
     def change_ace(self):
         if self.suit == "Ace" and self.value == 11:
